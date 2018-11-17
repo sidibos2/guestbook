@@ -3,10 +3,10 @@ namespace Bark\Model;
 
 class Connection
 {
-    const DB_USER = 'root';
-    const DB_PASS = 'root';
-    const DB_NAME = 'guestbook';
-    const DB_HOST = 'localhost';
+    const DB_USER = '';
+    const DB_PASS = '';
+    const DB_NAME = '';
+    const DB_HOST = '';
 
     public function getInstance()
     {

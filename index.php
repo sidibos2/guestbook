@@ -1,14 +1,23 @@
+<!DOCTYPE html>
 <html>
 <head>
     <title>Guestbook</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://getbootstrap.com/docs/4.1/examples/sign-in/signin.css" />
 </head>
 <body>
-<table width="400" border="0" align="center" cellpadding="3" cellspacing="0">
+<div class="container">
+<?php
+if (isset($_GET['msg'])) {
+    echo htmlspecialchars($_GET['msg']);
+}
+?>
+<table class="table" width="400" border="0" align="center" cellpadding="3" cellspacing="0">
     <tr>
         <td><strong>Bark Guestbook </strong></td>
     </tr>
 </table>
-<table width="400" border="0" align="center" cellpadding="0" cellspacing="1" bgcolor="#CCCCCC">
+<table class="table" width="400" border="0" align="center" cellpadding="0" cellspacing="1" bgcolor="#CCCCCC">
     <tr>
         <form id="form1" name="form1" method="post" action="addguestbook.php">
             <td>
@@ -38,10 +47,11 @@
         </form>
     </tr>
 </table>
-<table width="400" border="0" align="center" cellpadding="3" cellspacing="0">
+<table class="table" width="400" border="0" align="center" cellpadding="3" cellspacing="0">
     <tr>
         <td><strong><a href="viewguestbook.php">View Guestbook</a> </strong></td>
     </tr>
 </table>
+</div>
 </body>
 </html>

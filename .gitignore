@@ -1,1 +1,4 @@
 vendor/
+.idea
+#IDE metadata
+**.idea/**
