@@ -1,0 +1,18 @@
+{
+
+  "description": "This is for Bark",
+  "authors": [
+    {
+      "name": "Moussa Sidibe",
+      "email": "sidibemousse@hotmail.com"
+    }
+  ],
+  "require": {
+    "php": ">=5.5"
+  },
+  "autoload": {
+    "psr-4": {
+      "Bark\\": "src/"
+    }
+  }
+}
